@@ -1,0 +1,42 @@
+#weatherDataContainer {
+    width: 82%;
+    display: block;
+    margin: auto;
+}
+
+.locationSpecificDataContainer {
+    display: block;
+    margin: auto;
+    background-color: #0b5395;
+    border-radius: 5px;
+    height: 300px;
+}
+
+.topHalf {
+    display: flex;
+    margin: 50px auto auto auto;
+}
+
+.weatherIcon {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.bottomHalf {
+    display: block;
+    margin: auto 50px auto auto;
+}
+
+.spaceSideways {
+    margin: auto 30px auto 30px;
+}
+
+.spaceTopways {
+    margin: 50px auto auto auto;
+}
+
+.center {
+    text-align: center;
+}
+
+

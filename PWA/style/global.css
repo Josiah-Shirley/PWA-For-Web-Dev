@@ -1,0 +1,109 @@
+.font{
+    font-family: sans-serif;
+}
+
+.orange {
+    color: #fd7702;
+}
+
+.blue {
+    color: #0b5395;
+}
+
+.white {
+    color: white;
+}
+
+#header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#logo {
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#titleContainer {
+    display: block;
+    margin: auto;
+    width: 70%;
+    background-color: #0b5395;
+    border-radius: 8px;
+}
+
+#title {
+    text-align: center;
+}
+
+#navBar {
+    display: flex;
+    width: 84%;
+    margin: 35px auto auto auto;
+}
+
+.navButton {
+    display: block;
+    margin: auto;
+    background-color: #0b5395;
+    width: 150px;
+    border-style: solid;
+    border-color: #0b5395;
+    border-width: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pageTitle {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.pageTitle:hover {
+    color: #fd7702;
+}
+
+#divider {
+    width: 50%;
+    height: 3px;
+    display: block;
+    border-radius: 5px;
+    background-color: #fd7702;
+    margin: 100px auto auto auto;
+}
+
+#teamTitleContainer {
+    margin: 100px auto auto auto;
+    display: block;
+    width: 75%;
+}
+
+#ourTeam {
+    text-decoration: underline;
+}
+
+#teamMembersContainer {
+    margin: auto;
+    display: block;
+    width: 75%;
+}
+
+
+.bio {
+    display: flex;
+    margin: 50px auto auto auto;
+}
+
+.headshot {
+    width: 200px;
+}
+
+.bioText {
+    display: block;
+    margin: 20px auto auto 30px;
+    width: 45%;
+}
+
