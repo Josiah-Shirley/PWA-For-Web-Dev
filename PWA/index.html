@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/global.css">
+    <link rel="manifest" href="minifest.json" />
+    <link rel="icon" href="icons/manifest-icon-192.maskable.png" />
     <title>BS News</title>
 
 </head>
 <body>
+    <script src="contentSwitcher.js"></script>
     <div id="header">
         <img id="logo" src="images/BSN Logo.png" alt="Business Source News Logo">
         <div id="titleContainer">
@@ -18,46 +21,49 @@
 
     <div id="navBar">
         <div id="homeContainer" class="navButton">
-            <a href="" class="pageTitle white font">Home</a>
+            <h3 class="pageTitle white font">Home</a>
         </div>
         <div id="newsContainer" class="navButton">
-            <a href="pages/news.html" class="pageTitle white font">News</a>
+            <h3 class="pageTitle white font">News</a>
         </div>
         <div id="weatherContainer" class="navButton">
-            <a href="pages/weather.html" class="pageTitle white font">Weather</a>
+            <h3 class="pageTitle white font">Weather</a>
         </div>
-        <div id="sportsContainer" class="navButton">
-            <a href="pages/sports.html" class="pageTitle white font">Sports</a>
+        <div id="holidayContainer" class="navButton">
+            <h3 class="pageTitle white font">Holidays</a>
         </div>
     </div>
 
     <div id="divider"></div>
 
-    <div id="teamTitleContainer">
-        <h2 id="ourTeam" class="blue font">Our Team</h2>
+    <div id="pageContentContainer">
+
+        <div id="teamTitleContainer">
+            <h2 id="ourTeam" class="blue font">Our Team</h2>
+        </div>
+    
+        <div id="teamMembersContainer">
+            <div id="caberContainer">
+                <div class="bio">
+                    <img class="headshot" src="images/caber.jpg" alt="Headshot of Caber">
+                    <div class="bioText">
+                        <h2 class="orange font">Caber Caldwell</h2>
+                        <p class="blue font">After graduating with a master's degree in "Looking at the weather" from Yale, Caber fulfilled his life long dream of joining a news team. Now, Caber enjoys sipping room temperature root beers while sitting on his porch radaring traffic. Caber also enjoys finding time for his hobbies, such as semi-perfessional macaroni art. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="josiahContainer">
+                <div class="bio">
+                    <img class="headshot" src="images/josiah.jpg" alt="Headshot of Josiah">
+                    <div class="bioText">
+                        <h2 class="orange font">Josiah Shirley</h2>
+                        <p class="blue font">Josiah doesn't have much in the way of news experience, but what he lacks in the way of everything valuable, he makes up for with his can-do attitude! Josiah enjoys going to the local zoo and throwing things at the monkeys. He also enjoys going to bars, ordering only water, and leaving without tipping.</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
     </div>
 
-    <div id="teamMembersContainer">
-        <div id="caberContainer">
-            <div class="bio">
-                <img class="headshot" src="images/caber.jpg" alt="Headshot of Caber">
-                <div class="bioText">
-                    <h2 class="orange font">Caber Caldwell</h2>
-                    <p class="blue font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet iure tenetur perferendis sapiente veritatis expedita incidunt possimus dolor fugiat eaque ab itaque, ipsum eveniet dolorum, quod distinctio? Modi, architecto similique.</p>
-                </div>
-            </div>
-        </div>
-        <div id="josiaContainer">
-            <div class="bio">
-                <img class="headshot" src="images/josiah.jpg" alt="Headshot of Josiah">
-                <div class="bioText">
-                    <h2 class="orange font">Josiah Shirley</h2>
-                    <p class="blue font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet iure tenetur perferendis sapiente veritatis expedita incidunt possimus dolor fugiat eaque ab itaque, ipsum eveniet dolorum, quod distinctio? Modi, architecto similique.</p>
-                </div>
-            </div>
-                
-        </div>
-    </div>
-    
+    <script src="../app.js" defer></script>
 </body>
 </html>

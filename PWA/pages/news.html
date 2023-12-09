@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="../style/newsPage.css">
     <script src="../scripts/newsReport.js"></script>
+    <script src="../app.js" defer></script>
+    <link rel="manifest" href="cycletracker.json" />
+
     <title>BS News</title>
 </head>
 <body>
@@ -35,9 +38,29 @@
 
     <div id="divider"></div>
 
+    <form>
+        <button id="refresh">Refresh</button>
+        <button id="clear">Clear</button>
+        <button id="instal">Instal</button>
+    </form>
     <div id="newsStoriesContainer">
         <!--News stories go here-->
     </div>
+    <script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").then(
+          (registration) => {
+            console.log("Service worker registration successful:", registration);
+          },
+          (error) => {
+            console.error(`Service worker registration failed: ${error}`);
+          },
+        );
+      } else {
+        console.error("Service workers are not supported.");
+      }
+    </script>
+      
     
 </body>
 </html>

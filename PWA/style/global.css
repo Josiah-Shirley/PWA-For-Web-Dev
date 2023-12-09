@@ -1,3 +1,7 @@
+
+/*
+General class inserts
+*/
 .font{
     font-family: sans-serif;
 }
@@ -14,6 +18,19 @@
     color: white;
 }
 
+.center {
+    text-align: center;
+}
+
+body {
+    padding-bottom: 100px;
+}
+
+/*
+-----------------------------------------------------------------
+This is for the header element that is that top of every page
+(i.e. the logo, title, nav bar, etc.)
+*/
 #header {
     display: flex;
     width: 80%;
@@ -57,6 +74,12 @@
     text-align: center;
 }
 
+.navButton:hover {
+    background-color: grey;
+    border-color: grey;
+    text-emphasis-color: #fd7702;
+}
+
 .pageTitle {
     text-decoration: none;
     transition: color 0.3s;
@@ -75,14 +98,29 @@
     margin: 100px auto auto auto;
 }
 
+@media (max-width: 1000px) {
+    #titleContainer {
+        display: none;
+    }
+
+    #navBar {
+        display: block;
+    }
+
+    .navButton {
+        width: 25%;
+        margin: 25px auto auto auto;
+    }
+}
+
+/*
+-----------------------------------------------------------------
+This is for the home page content
+*/
 #teamTitleContainer {
     margin: 100px auto auto auto;
     display: block;
     width: 75%;
-}
-
-#ourTeam {
-    text-decoration: underline;
 }
 
 #teamMembersContainer {
@@ -105,5 +143,144 @@
     display: block;
     margin: 20px auto auto 30px;
     width: 45%;
+}
+
+@media (max-width: 1000px) {
+    .headshot {
+        height: 285px;
+    }
+
+    .bio {
+        display: block;
+    }
+
+    .bioText {
+        width: 65%;
+    }
+}
+/*
+-----------------------------------------------------------------
+This is for the news page content
+*/
+#newsStoriesContainer {
+    display: block;
+    margin: 50px auto auto auto;
+}
+
+.storyContainer {
+    display: flex;
+    margin: 100px auto auto auto;
+    width: 85%;
+    background-color: #0b5395;
+    border-style: solid;
+    border-color: #0b5395;
+    border-width: 25px;
+    border-radius: 5px;
+}
+
+.newsStoryImage {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.titleAndContentContainer {
+    margin: auto auto auto 30px;
+}
+
+.storyLink {
+    text-decoration: none;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.storyLink:hover {
+    color: white;
+} 
+
+@media (max-width: 1000px) {
+    .storyContainer {
+        display: block;
+    }
+}
+
+/*
+-----------------------------------------------------------------
+This is for the weather page content
+*/
+#weatherDataContainer {
+    width: 82%;
+    display: block;
+    margin: auto;
+}
+
+.locationSpecificDataContainer {
+    display: block;
+    margin: auto;
+    background-color: #0b5395;
+    border-radius: 5px;
+    height: 300px;
+}
+
+.topHalf {
+    display: flex;
+    margin: 50px auto auto auto;
+}
+
+.weatherIcon {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.bottomHalf {
+    display: block;
+    margin: auto 50px auto auto;
+}
+
+.spaceSideways {
+    margin: auto 30px auto 30px;
+}
+
+.spaceTopways {
+    margin: 50px auto auto auto;
+}
+
+/*
+-----------------------------------------------------------------
+This is for the holiday page content
+*/
+.dayContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.dateContainer {
+    width: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+
+#holidaysContainer {
+    display: block;
+    margin: auto;
+    width: 85%;
+}
+
+.dateCode {
+    text-align: center;
+}
+
+.monthContainer {
+    margin: 200px auto auto auto;
+}
+
+.monthName {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .dayContainer {
+        display: block;
+        margin: auto;
+    }
 }
 

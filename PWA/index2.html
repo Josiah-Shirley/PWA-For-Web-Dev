@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA</title>
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="manifest" href="minifest.json">
+
+</head>
+<body>
+    <h1>Hello PWA</h1>
+
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+</body>
+</html>
